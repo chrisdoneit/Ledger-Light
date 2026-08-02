@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/react'
 import './index.css'
 import Splash from './pages/Splash.jsx'
 import Login from './pages/Login.jsx'
+import ResetPassword from './pages/ResetPassword.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Splash />} />
         <Route path="/login" element={<Login mode="login" />} />
         <Route path="/signup" element={<Login mode="signup" />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
         <Route
           path="/app"
           element={
